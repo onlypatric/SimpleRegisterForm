@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="w-dvw h-dvh grid place-items-center">
+    <div class="min-w-60 w-1/3 min-h-32 bg-cyan-100 rounded-3xl shadow-2xl p-8 flex flex-col">
+      <h2 class="text-3xl uppercase font-bold">register</h2>
+      <form action="printOut.php" method="post" class="flex flex-row flex-wrap gap-2 items-center">
+        <div class="flex flex-col grow">
+          <label for="username" class="text-xs">Il tuo username</label>
+          <input type="text" name="username" id="username" required
+            class="bg-transparent border-b min-w-60 border-black outline-none hover:border-orange-950 focus:border-orange-400 transition-colors"
+            placeholder="mario.rossi37" pattern="^[a-zA-Z0-9_]+$">
+        </div>
+        <div class="flex flex-col grow">
+          <label for="name" class="text-xs">Il tuo nome</label>
+          <input type="text" name="name" id="name" required
+            class="bg-transparent border-b min-w-60 border-black outline-none hover:border-orange-950 focus:border-orange-400 transition-colors" placeholder="Mario" pattern="^[a-z ,.'-]+$">
+        </div>
+        <div class="flex flex-col grow">
+          <label for="surname" class="text-xs">Il tuo cognome</label>
+          <input type="text" name="surname" id="surname" required
+            class="bg-transparent border-b border-black outline-none hover:border-orange-950 focus:border-orange-400 transition-colors" placeholder="Rossi" pattern="^[a-z ,.'-]+$">
+        </div>
+        <div class="flex flex-col grow">
+          <label for="registration-mail" class="text-xs">La tua mail</label>
+          <input type="email" name="registrationMail" id="registration-mail" required
+            class="bg-transparent border-b border-black min-w-60 outline-none hover:border-orange-950 focus:border-orange-400 transition-colors" placeholder="mario.rossi@example.com">
+        </div>
+        <div class="flex flex-col grow">
+          <label for="birthDate" class="text-xs">Data di nascita</label>
+          <input type="date" name="birth-date" id="birthDate" required
+            class="bg-transparent border-b border-black outline-none hover:border-orange-950 focus:border-orange-400 transition-colors"
+            placeholder="11/09/2001">
+        </div>
+        <div class="flex flex-col grow">
+          <label for="password" class="text-xs">Password</label>
+          <input type="password" name="password" id="password" required
+            class="bg-transparent border-b border-black outline-none hover:border-orange-950 focus:border-orange-400 transition-colors"
+            placeholder="PincoPallino69420" pattern="^[^\s]+$">
+        </div>
+        <button type="submit" class="uppercase bg-sky-400 px-4 py-2 rounded-2xl shadow-lg">registrati</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
